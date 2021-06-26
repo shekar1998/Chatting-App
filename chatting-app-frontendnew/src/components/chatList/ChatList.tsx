@@ -26,7 +26,7 @@ function ChatList() {
   const dark = useSelector((state: any) => state.mode.mode);
     console.log(dark);
     let style: any;
-    if (dark) {
+    if (!dark) {
       style = {
         background: "#20272e !important",
         "&:active": {
